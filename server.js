@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import fs from 'fs/promises';
 import { fileURLToPath } from 'url';
+import process from 'process';
 
 const app = express();
 const PORT = process.env.PORT || 3002;
@@ -64,7 +65,7 @@ app.put('/api/anecdotes/:id', async (req, res) => {
 });
 
 app.get('/version', (req, res) => {
-  res.send('1.0.0 deployed with own pipeline after lint check') // change this string to ensure a new version deployed
+  res.send('1.0.0 deployed with own pipeline after lint') // change this string to ensure a new version deployed
 })
 
 app.get('/health', (req, res) => {
