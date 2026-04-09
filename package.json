@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start:dev": "PORT=3002 node server.js",
     "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
