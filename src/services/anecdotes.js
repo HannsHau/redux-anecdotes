@@ -1,4 +1,5 @@
-const baseUrl = 'http://localhost:3001/anecdotes'
+//const baseUrl = 'http://localhost:3001/anecdotes'
+const baseUrl = '/api/anecdotes'
 
 const getAll = async () => {
   const response = await fetch(baseUrl)
