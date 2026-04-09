@@ -64,7 +64,7 @@ app.put('/api/anecdotes/:id', async (req, res) => {
 });
 
 app.get('/version', (req, res) => {
-  res.send('0.0.0 initial running') // change this string to ensure a new version deployed
+  res.send('1.0.0 deployed with own pipeline after lint check') // change this string to ensure a new version deployed
 })
 
 app.get('/health', (req, res) => {
